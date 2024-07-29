@@ -47,7 +47,7 @@ public class DogServiceImpl implements DogService {
             existingDog.setOrigin(dog.getOrigin());
             dogRepository.save(existingDog);
         } else {
-            throw new IllegalArgumentException("Dog with ID " + dog.getId() + " not found.");
+            throw new DogNotFoundException("Dog with ID " + dog.getId() + " not found.");
         }
     }
 }
