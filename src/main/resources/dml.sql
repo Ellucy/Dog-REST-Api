@@ -1,0 +1,10 @@
+INSERT INTO dog(dog_name, breed, origin) VALUES ('India', 'Golden Retriever', 'Asia');
+INSERT INTO dog(dog_name, breed, origin) VALUES ('Brazil', 'Labrador', 'South America');
+INSERT INTO dog(dog_name, breed, origin) VALUES ('USA', 'German Shepherd', 'North America');
+INSERT INTO dog(dog_name, breed, origin) VALUES ('Italy', 'Cane Corso', 'Europe');
+INSERT INTO dog(dog_name, breed, origin) VALUES ('China', 'Chow Chow', 'Asia');
+INSERT INTO dog(dog_name, breed, origin) VALUES ('France', 'French Bulldog', 'Europe');
+INSERT INTO dog(dog_name, breed, origin) VALUES ('Australia', 'Australian Shepherd', 'Oceania');
+INSERT INTO dog(dog_name, breed, origin) VALUES ('Canada', 'Newfoundland', 'North America');
+INSERT INTO dog(dog_name, breed, origin) VALUES ('Japan', 'Shiba Inu', 'Asia');
+INSERT INTO dog(dog_name, breed, origin) VALUES ('England', 'Bulldog', 'Europe');

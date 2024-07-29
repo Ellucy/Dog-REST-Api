@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS dog (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    dog_name VARCHAR(255),
+    breed VARCHAR(255),
+    origin VARCHAR(255)
+    );
