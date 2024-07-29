@@ -30,6 +30,24 @@ public class DogController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
+    @GetMapping("/breed")
+    public ResponseEntity<List<String>> getDogBreeds() {
+        List<String> list = dogService.retrieveDogBreed();
+        return new ResponseEntity<List<String>>(list, HttpStatus.OK);
+    }
+
+    @GetMapping("/{id}/breed")
+    public ResponseEntity<String> getBreedByID(@PathVariable Long id) {
+        String breed = dogService.retrieveDogBreedById(id);
+        return new ResponseEntity<String>(breed, HttpStatus.OK);
+    }
+
+    @GetMapping("/name")
+    public ResponseEntity<List<String>> getDogNames() {
+        List<String> list = dogService.retrieveDogNames();
+        return new ResponseEntity<List<String>>(list, HttpStatus.OK);
+    }
+
     @PostMapping
     public ResponseEntity<Void> addDog(@RequestBody Dog dog) {
         dogService.addDog(dog);
